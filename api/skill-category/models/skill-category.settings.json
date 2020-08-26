@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skill_categories",
+  "info": {
+    "name": "Skill Category"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "skills": {
+      "via": "skillCategory",
+      "collection": "skill"
+    }
+  }
+}

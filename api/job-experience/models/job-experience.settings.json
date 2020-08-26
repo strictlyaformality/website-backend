@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_experiences",
+  "info": {
+    "name": "Job Experience"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "job": {
+      "model": "job",
+      "via": "jobExperiences"
+    }
+  }
+}

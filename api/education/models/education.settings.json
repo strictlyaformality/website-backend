@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "educations",
+  "info": {
+    "name": "Education"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "institutionName": {
+      "type": "string",
+      "required": true
+    },
+    "degreeName": {
+      "type": "string",
+      "required": true
+    },
+    "startDate": {
+      "type": "date",
+      "required": true
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "achievedGpa": {
+      "type": "decimal"
+    },
+    "maximumGpa": {
+      "type": "decimal"
+    },
+    "additionalInformation": {
+      "type": "text"
+    }
+  }
+}

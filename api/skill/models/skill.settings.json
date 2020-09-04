@@ -17,14 +17,11 @@
       "model": "skill-category",
       "via": "skills"
     },
-    "image": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false
+    "imageUrl": {
+      "type": "string"
+    },
+    "sortOrder": {
+      "type": "integer"
     }
   }
 }

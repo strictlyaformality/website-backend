@@ -17,6 +17,9 @@
     "skills": {
       "via": "skillCategory",
       "collection": "skill"
+    },
+    "sortOrder": {
+      "type": "integer"
     }
   }
 }

@@ -7,6 +7,9 @@ module.exports = ({ env }) => {
       database: env('DATABASE_NAME', 'strapi'),
       username: env('DATABASE_USERNAME', ''),
       password: env('DATABASE_PASSWORD', ''),
+      ssl: {
+        rejectUnauthorized: false,
+      },
     }
     : {
       client: 'sqlite',

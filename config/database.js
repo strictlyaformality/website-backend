@@ -21,7 +21,7 @@ module.exports = ({ env }) => {
         settings,
         options: {
           useNullAsDefault: true,
-          ssl: false
+          ssl: true
         },
       },
     },
